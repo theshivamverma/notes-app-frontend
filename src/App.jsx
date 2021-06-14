@@ -6,6 +6,8 @@ import { Navbar } from "./components/navbar"
 import { Notes } from "./components/notes"
 import { ProtectedRoute } from "./components/auth"
 
+import "./App.css"
+
 function App() {
   return (
     <Flex w="100vw" h="100vh" direction="column">

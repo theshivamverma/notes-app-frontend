@@ -52,7 +52,7 @@ export default function Navbar() {
         )}
       </Flex>
       <Flex
-        w={{ base: "45%", xl: "22%" }}
+        w={{ base: "45%", xl: "30%" }}
         justify="space-between"
         align="center"
       >
@@ -91,7 +91,7 @@ export default function Navbar() {
         >
           {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
         </Circle>
-        <Circle display={ pathname === "/notes" ? "initial" : "none" } size="35px" onClick={onOpen} ref={btnRef}>
+        <Circle display={ pathname === "/notes" ? "initial" : "none" } display={{ base: "initial", xl: "none" }} size="35px" onClick={onOpen} ref={btnRef}>
           <HamburgerIcon />
         </Circle>
       </Flex>

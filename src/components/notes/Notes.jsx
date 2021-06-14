@@ -18,11 +18,23 @@ export default function Notes() {
   }, [user, login]);
 
   return (
-    <Flex w="100%">
-      <Flex display={{ base: "none", xl: "flex" }} p="4" w="20%" justify="center">
+    <Flex w="100vw" m={0}
+        p={0}>
+      <Flex
+        display={{ base: "none", xl: "flex" }}
+        p="4"
+        w="20%"
+        justify="center"
+        m={0}
+      >
         <NoteFilter onClose={null} isMobileVersion={false} />
       </Flex>
-      <Flex p="4" w={{ base: "100%", xl: "80%" }} direction="column">
+      <Flex
+        p="4"
+        w={{ base: "100%", xl: "80%" }}
+        direction="column"
+        m={0}
+      >
         <NoteCreate />
         <NoteDisplay />
       </Flex>

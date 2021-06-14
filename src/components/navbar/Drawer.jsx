@@ -15,7 +15,6 @@ function DrawerMenu({ isOpen, onClose, btnRef }) {
         placement="bottom"
         onClose={onClose}
         isFullHeight={true}
-        preserveScrollBarGap={true}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
