@@ -12,9 +12,10 @@ function DrawerMenu({ isOpen, onClose, btnRef }) {
     return (
       <Drawer
         isOpen={isOpen}
-        placement="bottom"
+        placement="right"
         onClose={onClose}
         isFullHeight={true}
+        preserveScrollBarGap={true}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />

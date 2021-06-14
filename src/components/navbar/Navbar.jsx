@@ -36,7 +36,7 @@ export default function Navbar() {
   const { pathname } = useLocation()
 
   return (
-    <Flex bg={navbarbg} px={4} py={2} align="center" justify="space-between">
+    <Flex w="100vw" bg={navbarbg} px={4} py={2} align="center" justify="space-between">
       <Flex
         w={{ base: "40%", xl: "20%" }}
         justify="space-between"
