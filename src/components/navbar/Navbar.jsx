@@ -91,9 +91,16 @@ export default function Navbar() {
         >
           {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
         </Circle>
-        <Circle display={ pathname === "/notes" ? "initial" : "none" } display={{ base: "initial", xl: "none" }} size="35px" onClick={onOpen} ref={btnRef}>
-          <HamburgerIcon />
-        </Circle>
+        {pathname === "/notes" && (
+          <Circle
+            display={{ base: "initial", xl: "none" }}
+            size="35px"
+            onClick={onOpen}
+            ref={btnRef}
+          >
+            <HamburgerIcon />
+          </Circle>
+        )}
       </Flex>
       <DrawerMenu isOpen={isOpen} onClose={onClose} btnRef={btnRef} />
     </Flex>
